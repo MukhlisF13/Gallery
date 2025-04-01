@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Banner from './banner.js';
 import Gallery from './Gallery.js';
-import SearchBar from './SearchBar'; // Import SearchBar
+import SearchBar from './SearchBar'; 
 import './index.css';
 
 const Index = () => {
@@ -59,7 +59,7 @@ const Index = () => {
     <div className="container">
       <Banner text="My Flipcard Gallery" />
 
-      <SearchBar onSearch={handleSearch} /> {/* Search Bar Component */}
+      <SearchBar onSearch={handleSearch} /> 
 
       {filteredShows.length > 0 && (
         <section className="section">
