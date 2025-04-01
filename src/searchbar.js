@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SearchBar.css"; // Import the CSS file
+import "./SearchBar.css"; 
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -7,7 +7,7 @@ const SearchBar = ({ onSearch }) => {
   const handleInputChange = (event) => {
     const value = event.target.value;
     setQuery(value);
-    onSearch(value); // Send search input to the parent component (Index.js)
+    onSearch(value); 
   };
 
   return (
